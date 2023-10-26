@@ -1,9 +1,10 @@
-import Login from "./paginas/login/Login";
+import Rotas from "./rotas/Rotas";
+
 
 function App() {
   return (
     <>
-    <Login/>
+    <Rotas/>
     </>
   );
 }
