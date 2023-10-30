@@ -13,6 +13,9 @@ function Login(){
         navigate('home')
     }
 
+    console.log(email)
+    console.log(password)
+
 
     const handleSubmit = (e)=>{
         e.preventDefault()
@@ -24,7 +27,8 @@ function Login(){
                 'content-Type': "application/json"
             },
         }).then(response =>{
-            alert(response.data.menssage)
+            alert(response.data.message)
+            console.log(response.data)
             goToHome()
         })
         .catch(error => console.log(error))
